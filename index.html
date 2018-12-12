@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Pre-Conference Workshop - iCMS 2019</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 61px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+
+.section h2 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h3 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h4 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h5 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h6 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"> </a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="contact.html">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Pre-Conference Workshop - iCMS 2019</h1>
+
+</div>
+
+
+<p><link rel="stylesheet" href="styles.css" type="text/css"></p>
+<p><img src="images/logo.png" style="width:100%; margin-right: 20px" align="center"></p>
+<center>
+<p>Date:<br />
+23 - 24 April 2019</p>
+<p>Venue:<br />
+Ombak Villa Resort, Langkawi Island, Malaysia</p>
+Theme:<br />
+Discover Knew Knowledge Through Research
+</center>
+<p><br/></p>
+<div id="r-workshop" class="section level2">
+<h2><strong>R Workshop</strong></h2>
+<p><strong>“Visualization of your tidy data”</strong><br />
+<strong>21 - 22 April 2019</strong><br />
+<strong>Ombak Villa Resort, Langkawi</strong></p>
+<p>In conjunction with the two conferences, the organising committee is conducting three parallel pre-conference workshops. For registration and further information please refer to the respective link given below.</p>
+<div id="speaker" class="section level3">
+<h3><strong>SPEAKER</strong></h3>
+<table>
+<colgroup>
+<col width="24%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Matthias Templ, PhD</th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><img src="images/matthias.png" style="width:90%; margin-right: 18px" align="center"></td>
+<td align="left">Dr Matthias Templ is the owner of data analysis company OG. He obtained his PhD in Technical Mathematics from Vienna University of Technology and was an associate professor at the same university. Currently Dr Temple lectures at the Institute of Data Analysis and Process Design, Zurich University of Applied Sciences, Switzerland. He also holds a position as a consultant to the Palacký University Olomouc, Czech Republic. Dr Templ is a researcher at the Quality and Methods Unit at Statistics Austria. His other consultation works include for the World Bank and the OECD. His main research interest is in the area of imputation, statistical disclosure control, visualization, compositional data analysis, computational statistics, teaching in statistics and cluster analysis. He participated in many European research projects, to name one of those: the AMELI project for adequate estimation of poverty and social exclusion. Dr Templ has more than 280 scientific contributions in books, scientific journals and conferences as well as more than 40 papers in well-known indexed scientific journals. He is the author and maintainer of several R packages for official statistics, such as the <code>sdcMicro</code> package for statistical disclosure control, the <code>VIM</code> package for visualization and imputation of missing values, the <code>simPop</code> package for synthetic population simulation, and the <code>robCompositions</code> package for robust analysis of compositional data. He is also a co-author to many other packages. In addition, Dr. Matthias Templ is the editor-in-chief of the Austrian Journal of Statistics; associate editor for Springer’s Journal Wirtschafts-und Sozialstatistische Archiv; editor for the journal The Register; and on the editorial board of three other journals – JWARP journal, The Journal Transactions on Data Privacy, and the Journal Frontiers in Biomedical Physics</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="what-is-r" class="section level3">
+<h3><strong>WHAT IS R?</strong></h3>
+<p>open source; powerful and comprehensive platform for visualizing data, understanding and evaluating statistical models; programming language and software environment for statistical computing and graphics; ready to use for applications in data science, data analytics and for big data sets; participants expected to be able to use efficient R code and use R packages to perform data analytics after the workshop</p>
+</div>
+<div id="who-should-attend" class="section level3">
+<h3><strong>WHO SHOULD ATTEND?</strong></h3>
+<p>Lecturers, Researchers, Engineers, Students, Industry Professionals and Scientists of any discipline who wish to explore R and Big Data.</p>
+</div>
+<div id="course-outline" class="section level3">
+<h3><strong>COURSE OUTLINE</strong></h3>
+<p>We assume basic knowledge in R syntax, for example by doing the exercises of R package Swirl or a free course, e.g. on data camp in advance to this course. All topics are accompanied by practical exercises to be done by course participants themselves on their laptops.</p>
+<p>First day:</p>
+<ul>
+<li><p>RStudio</p></li>
+<li><p>Data Analysis with R, some basics and warm up</p></li>
+<li><p>Tidy data and data manipulation with dplyr</p></li>
+<li><p>The graphics package in R</p></li>
+</ul>
+<p>Second day:</p>
+<ul>
+<li><p>Advanced data visualization with ggplot2</p></li>
+<li><p>Mapping, Maps with ggmap and leaflet</p></li>
+<li><p>Special graphics for special problems</p></li>
+<li><p>Overview on interactive visualisation tools</p></li>
+<li><p>Web applications with R shiny and markdown</p></li>
+</ul>
+</div>
+<div id="committee" class="section level3">
+<h3>Committee</h3>
+<div id="international-scientific-committee" class="section level4">
+<h4>International Scientific Committee</h4>
+<table>
+<colgroup>
+<col width="22%" />
+<col width="77%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>SC Members</th>
+<th>Institution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tudorel Andrei</td>
+<td>National Institute of Statistics and Bucharest, University of Economic Studies, Bucharest, Romania</td>
+</tr>
+<tr class="even">
+<td>Matthias Templ</td>
+<td>Statistics Austria and Institute of Data Analysis and Process Design, Zurich University of Applied Sciences, Zurich Switzerland</td>
+</tr>
+<tr class="odd">
+<td>Ralf Munnich</td>
+<td>University of Trier, Germany</td>
+</tr>
+<tr class="even">
+<td>Risto Lehtonen</td>
+<td>University of Helsinki, Finland</td>
+</tr>
+<tr class="odd">
+<td>Gergely Daroczi</td>
+<td>Easystats Ltd, Budapest, Hungary</td>
+</tr>
+<tr class="even">
+<td>Lucian Liviu Albu</td>
+<td>Romanian Academy, Institute for Economic Forecasting, Bucharest, Romania</td>
+</tr>
+<tr class="odd">
+<td>Gheorghe Zaman</td>
+<td>Romanian Academy, Institute of National Economy, Bucharest, Romania</td>
+</tr>
+<tr class="even">
+<td>Valentina Vasile</td>
+<td>Romanian Academy, Institute of National Economy, Bucharest, Romania</td>
+</tr>
+<tr class="odd">
+<td>Dorin Jula</td>
+<td>Romanian Academy, Institute for Economic Forecasting and Ecological University of Bucharest, Romania</td>
+</tr>
+<tr class="even">
+<td>Bogdan Oancea</td>
+<td>University of Bucharest and National Institute of Statistics, Bucharest, Romania</td>
+</tr>
+<tr class="odd">
+<td>Monica Roman</td>
+<td>Bucharest University of Economic Studies, Romania</td>
+</tr>
+<tr class="even">
+<td>Nicoleta Caragea</td>
+<td>National Institute of Statistics and Ecological University of Bucharest, Romania</td>
+</tr>
+<tr class="odd">
+<td>Antoniade-Ciprian Alexandru</td>
+<td>Ecological University of Bucharest, Romania</td>
+</tr>
+<tr class="even">
+<td>Adrian Dusa</td>
+<td>University of Bucharest, Romania</td>
+</tr>
+<tr class="odd">
+<td>Elena Druica</td>
+<td>University of Bucharest, Romania</td>
+</tr>
+<tr class="even">
+<td>Nicolae-Marius Jula</td>
+<td>Nicolae Titulescu University, Bucharest, Romania</td>
+</tr>
+<tr class="odd">
+<td>Ana Maria Dobre</td>
+<td>National Institute of Statistics</td>
+</tr>
+<tr class="even">
+<td>Gerald Cheang</td>
+<td>University of South Australia, Australia</td>
+</tr>
+<tr class="odd">
+<td>Suhaidi Hassan</td>
+<td>InterNetWorks Research Laboratory, Universiti Utara Malaysia, Malaysia</td>
+</tr>
+<tr class="even">
+<td>Martin Everett</td>
+<td>University of Manchester, UK</td>
+</tr>
+<tr class="odd">
+<td>Nicolaas Jan Dirk Nagelkerke</td>
+<td>University of Amsterdam, Netherland</td>
+</tr>
+<tr class="even">
+<td>Ang Miin Huey</td>
+<td>Uiniversiti Sains Malaysia, Malaysia</td>
+</tr>
+<tr class="odd">
+<td>Poo Kuan Hoong</td>
+<td>Senior Manager Data Science, AC Nielsen</td>
+</tr>
+<tr class="even">
+<td>Nurhuda Ismail</td>
+<td>Universiti Teknologi MARA, Malaysia</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="organizing-committee-universiti-teknologi-mara-kedah" class="section level4">
+<h4>Organizing Committee (Universiti Teknologi MARA Kedah)</h4>
+<p>Abd Razak Ahmad<br />
+Amirah Hazwani Abd Rahim<br />
+Anis Mardiana Ahmad<br />
+Asmahani Nayan Fazillah Bosli<br />
+Kamarul Ariffin Mansor<br />
+Kartini Kassim<br />
+Mohd Rijal Illias<br />
+Kor Liew Kee<br />
+Noor Hafizah Zainal Aznam<br />
+Rosidah Ahmad<br />
+Shahida Farhan Zakaria<br />
+Siti Fairus Mokhtar<br />
+Wan Siti Esah Che Hussain</p>
+<p><br/></p>
+</div>
+</div>
+</div>
+<div id="contact-us" class="section level2">
+<h2>Contact Us</h2>
+<p>For further enquiries,</p>
+<p><strong>E-mail:</strong><br />
+<a href="mailto:icms2019@uitm.edu.my" class="email">icms2019@uitm.edu.my</a></p>
+<p><strong>Phone:</strong><br />
++604-456 2506 (Kor Liew Kee) (Publication)<br />
++604-456 2406 (Asmahani Nayan) (General Inquiry)<br />
++604-456 2445 (Noor Hafizah Zainal Aznam) (Payment)<br />
++604-456 2408 (Kamarul Ariffin Mansor) (Workshop)</p>
+<p><strong>Address:</strong><br />
+Secretariat iCMS2019<br />
+Faculty of Computer and Mathematical Sciences<br />
+Universiti Teknologi MARA Kedah<br />
+Sungai Petani Campus<br />
+08400 Merbok<br />
+Kedah Darul Aman, MALAYSIA <br/></p>
+</div>
+<div id="disclaimer" class="section level2">
+<h2>Disclaimer</h2>
+<ol style="list-style-type: decimal">
+<li><p>All information submitted for the purpose of registration to the conference and fee payment will be treated with strict confidential.</p></li>
+<li><p>UiTM and the organizing committee shall not be able to accept refund requests.</p></li>
+<li><p>UiTM and the organizing committee shall not be responsible for information provided in this site on accommodation and tourism in Langkawi Malaysia. Kindly please check linked sites for regular updates.</p></li>
+<li><p>All responsibilities on flights and accommodation bookings lie with the delegates.</p></li>
+</ol>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
