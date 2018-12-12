@@ -80,9 +80,9 @@ Second day:
 
   
 
-### Committee  
+## Committee  
   
-#### International Scientific Committee  
+### International Scientific Committee  
   
 SC Members|Institution
 --|-------
@@ -112,7 +112,7 @@ Poo Kuan Hoong|Senior Manager Data Science, AC Nielsen
 Nurhuda Ismail|Universiti Teknologi MARA, Malaysia  
   
   
-#### Organizing Committee (Universiti Teknologi MARA Kedah)  
+### Organizing Committee (Universiti Teknologi MARA Kedah)  
   
 Abd Razak Ahmad  
 Amirah Hazwani Abd Rahim  
