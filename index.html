@@ -25,9 +25,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -103,6 +102,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -117,7 +119,6 @@ body {
   padding-top: 66px;
   margin-top: -66px;
 }
-
 .section h2 {
   padding-top: 66px;
   margin-top: -66px;
@@ -137,6 +138,43 @@ body {
 .section h6 {
   padding-top: 66px;
   margin-top: -66px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -158,18 +196,77 @@ $(document).ready(function () {
 });
 </script>
 
-
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -310,22 +407,25 @@ div.tocify {
 <p><link rel="stylesheet" href="styles.css" type="text/css"></p>
 <p><img src="images/logo.png" style="width:100%; margin-right: 20px" align="center"></p>
 <center>
-<p>Date:<br />
+<p><strong>Date:</strong><br />
 23 - 24 April 2019</p>
-<p>Venue:<br />
+<p><strong>Venue:</strong><br />
 Ombak Villa Resort, Langkawi Island, Malaysia</p>
-Theme:<br />
+<strong>Theme:</strong><br />
 Discover Knew Knowledge Through Research
 </center>
 <p><br/></p>
+<p><em>For more information on the conference, please follow this <a href="https://uitmicms.wixsite.com/icms2019">link</a> or you can download the <a href="files/icms2019.pdf">conference brochure</a></em></p>
+<hr />
 <div id="r-workshop" class="section level2">
 <h2><strong>R Workshop</strong></h2>
-<p><strong>“Visualization of your tidy data”</strong><br />
+<p><strong>“Visualization of your tidy data”</strong> <a href="files/workshop.pdf">Download Brochure</a><br />
 <strong>21 - 22 April 2019</strong><br />
 <strong>Ombak Villa Resort, Langkawi</strong></p>
 <p>In conjunction with the two conferences, the organising committee is conducting three parallel pre-conference workshops. For registration and further information please refer to the respective link given below.</p>
+<hr />
 <div id="speaker" class="section level3">
-<h3><strong>SPEAKER</strong></h3>
+<h3><strong>Speaker</strong></h3>
 <table>
 <colgroup>
 <col width="24%" />
@@ -346,24 +446,37 @@ Discover Knew Knowledge Through Research
 </table>
 </div>
 <div id="what-is-r" class="section level3">
-<h3><strong>WHAT IS R?</strong></h3>
+<h3><strong>What is R?</strong></h3>
 <p>open source; powerful and comprehensive platform for visualizing data, understanding and evaluating statistical models; programming language and software environment for statistical computing and graphics; ready to use for applications in data science, data analytics and for big data sets; participants expected to be able to use efficient R code and use R packages to perform data analytics after the workshop</p>
 </div>
 <div id="who-should-attend" class="section level3">
-<h3><strong>WHO SHOULD ATTEND?</strong></h3>
-<p>Lecturers, Researchers, Engineers, Students, Industry Professionals and Scientists of any discipline who wish to explore R and Big Data.</p>
+<h3><strong>Who Should Attend?</strong></h3>
+<ul>
+<li>Lecturers,<br />
+</li>
+<li>Researchers,<br />
+</li>
+<li>Engineers,<br />
+</li>
+<li>Students,<br />
+</li>
+<li>Industry Professionals, and<br />
+</li>
+<li>Scientists<br />
+of any discipline who wish to explore R and Big Data.</li>
+</ul>
 </div>
 <div id="course-outline" class="section level3">
-<h3><strong>COURSE OUTLINE</strong></h3>
+<h3><strong>Course Outline</strong></h3>
 <p>We assume basic knowledge in R syntax, for example by doing the exercises of R package Swirl or a free course, e.g. on data camp in advance to this course. All topics are accompanied by practical exercises to be done by course participants themselves on their laptops.</p>
-<p>First day:</p>
+<p><strong>First day (21st April, 2019):</strong></p>
 <ul>
 <li><p>RStudio</p></li>
 <li><p>Data Analysis with R, some basics and warm up</p></li>
 <li><p>Tidy data and data manipulation with dplyr</p></li>
 <li><p>The graphics package in R</p></li>
 </ul>
-<p>Second day:</p>
+<p><strong>Second day (22nd April, 2019):</strong></p>
 <ul>
 <li><p>Advanced data visualization with ggplot2</p></li>
 <li><p>Mapping, Maps with ggmap and leaflet</p></li>
@@ -371,10 +484,120 @@ Discover Knew Knowledge Through Research
 <li><p>Overview on interactive visualisation tools</p></li>
 <li><p>Web applications with R shiny and markdown</p></li>
 </ul>
+<hr />
+</div>
+<div id="registration" class="section level3">
+<h3>Registration</h3>
+<p>Registration for pre-conference workshop is noe <strong>OPEN</strong>.<br />
+All interested participant can register through confBay by clicking the following <a href="https://submit.confbay.com/conf/icms2019"><img src="images/logo-confbay.png" alt="confBay" /></a>.<br />
+Participants are advice to create a confBay account first if you don’t have one yet before you are allowed to log in and register.</p>
+</div>
+<div id="workshop-fee" class="section level3">
+<h3>Workshop Fee</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Early Bird (Before 15 February 2019)</th>
+<th align="left">Regular Price</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Local Participant</strong></td>
+<td align="left"><strong>Local Participant</strong></td>
+</tr>
+<tr class="even">
+<td align="left"><em>Individual</em> - MYR 980</td>
+<td align="left"><em>Individual</em> - MYR 1500</td>
+</tr>
+<tr class="odd">
+<td align="left"><em>Group of 2</em> - MYR 890 (each)</td>
+<td align="left"><em>Group of 2</em> - MYR 1200 (each)</td>
+</tr>
+<tr class="even">
+<td align="left"><em>Student</em> - MYR 800</td>
+<td align="left"><em>Student</em> - MYR 1000</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>International Participant</strong></td>
+<td align="left"><strong>International Participant</strong></td>
+</tr>
+<tr class="odd">
+<td align="left"><em>Individual</em> - USD 250</td>
+<td align="left"><em>Individual</em> - USD 380</td>
+</tr>
+<tr class="even">
+<td align="left"><em>Group of 2</em> - USD 230 (each)</td>
+<td align="left"><em>Group of 2</em> - USD 320 (each)</td>
+</tr>
+<tr class="odd">
+<td align="left"><em>Student</em> - USD 210</td>
+<td align="left"><em>Student</em> - USD 300</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="mode-of-payment" class="section level3">
+<h3>Mode of Payment</h3>
+<p><strong>For Local Presenter / Participant / Student</strong> Academic Institutional cheques/ Banker’s cheques/Inter Bank Giro (IBG)/Bank Transfer/Government Local Order (LO) (Personal cheques are not accepted). All cheques must be made payable to <strong>“Bendahari UiTM Kedah”</strong>.</p>
+<p><strong>For International Presenter / Participant / Student</strong><br />
+Telegraphic Transfers/Electronic Transfers ONLY (including bank charges).</p>
+<table>
+<colgroup>
+<col width="21%" />
+<col width="78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Item</th>
+<th align="left">Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Bank Name</td>
+<td align="left">: Bank Islam Malaysia Bhd (Sungai Petani Branch)</td>
+</tr>
+<tr class="even">
+<td align="left">Bank Address</td>
+<td align="left">: No.71&amp;72 Lorong Lagenda 1, Lagenda Heights, 08000 Sungai Petani, Kedah, MALAYSIA</td>
+</tr>
+<tr class="odd">
+<td align="left">Bank Account Number</td>
+<td align="left">: 02020010021120</td>
+</tr>
+<tr class="even">
+<td align="left">Bank Account Name</td>
+<td align="left">: UiTM Cawangan Kedah</td>
+</tr>
+<tr class="odd">
+<td align="left">Pay to</td>
+<td align="left">: Bendahari UiTM Kedah</td>
+</tr>
+<tr class="even">
+<td align="left">Swift Code</td>
+<td align="left">: BIMBMYKL</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Proof Of Payments</strong><br />
+Please send the bank transaction slip or receipt as proof of payment by uploading to</p>
+<center>
+<a href="https://submit.confbay.com/conf/icms2019"><img src="images/logo-confbay.png" alt="confBay" /></a>.
+</center>
+<p>*Please bring along your proof of payment on the registration day.</p>
+<p><strong>Cancellation and Refund Policy</strong><br />
+Payments made are non-refundable.</p>
+<hr />
 </div>
 </div>
-<div id="committee" class="section level2">
-<h2>Committee</h2>
+<div id="icms2019-committee" class="section level2">
+<h2>iCMS2019 Committee</h2>
+<hr />
 <div id="international-scientific-committee" class="section level3">
 <h3>International Scientific Committee</h3>
 <table>
@@ -390,44 +613,60 @@ Discover Knew Knowledge Through Research
 </thead>
 <tbody>
 <tr class="odd">
-<td>Tudorel Andrei</td>
-<td>National Institute of Statistics and Bucharest, University of Economic Studies, Bucharest, Romania</td>
+<td>Adrian Dusa</td>
+<td>University of Bucharest, Romania</td>
 </tr>
 <tr class="even">
-<td>Matthias Templ</td>
-<td>Statistics Austria and Institute of Data Analysis and Process Design, Zurich University of Applied Sciences, Zurich Switzerland</td>
+<td>Ana Maria Dobre</td>
+<td>National Institute of Statistics</td>
 </tr>
 <tr class="odd">
-<td>Ralf Munnich</td>
-<td>University of Trier, Germany</td>
+<td>Antoniade-Ciprian Alexandru</td>
+<td>Ecological University of Bucharest, Romania</td>
 </tr>
 <tr class="even">
-<td>Risto Lehtonen</td>
-<td>University of Helsinki, Finland</td>
+<td>Arindam Bose</td>
+<td>Tata Institute of Social Sciences (TISS), Mumbai, India</td>
 </tr>
 <tr class="odd">
-<td>Gergely Daroczi</td>
-<td>Easystats Ltd, Budapest, Hungary</td>
+<td>Bogdan Oancea</td>
+<td>The University of Bucharest and National Institute of Statistics, Bucharest, Romania</td>
 </tr>
 <tr class="even">
-<td>Lucian Liviu Albu</td>
-<td>Romanian Academy, Institute for Economic Forecasting, Bucharest, Romania</td>
+<td>Dorin Jula</td>
+<td>Romanian Academy, Institute for Economic Forecasting and Ecological University of Bucharest, Romania</td>
+</tr>
+<tr class="odd">
+<td>Elena Druica</td>
+<td>University of Bucharest, Romania</td>
+</tr>
+<tr class="even">
+<td>Gerald Cheang</td>
+<td>University of South Australia, Australia</td>
 </tr>
 <tr class="odd">
 <td>Gheorghe Zaman</td>
 <td>Romanian Academy, Institute of National Economy, Bucharest, Romania</td>
 </tr>
 <tr class="even">
-<td>Valentina Vasile</td>
-<td>Romanian Academy, Institute of National Economy, Bucharest, Romania</td>
+<td>Hala Aly Fergany</td>
+<td>Tanta University, Egypt</td>
 </tr>
 <tr class="odd">
-<td>Dorin Jula</td>
-<td>Romanian Academy, Institute for Economic Forecasting and Ecological University of Bucharest, Romania</td>
+<td>Lucian Liviu Albu</td>
+<td>Romanian Academy, Institute for Economic Forecasting, Bucharest, Romania</td>
 </tr>
 <tr class="even">
-<td>Bogdan Oancea</td>
-<td>University of Bucharest and National Institute of Statistics, Bucharest, Romania</td>
+<td>Matthias Templ</td>
+<td>Statistics Austria &amp; Zurich University of Applied Sciences, Switzerland</td>
+</tr>
+<tr class="odd">
+<td>Martin Everett</td>
+<td>University of Manchester, UK</td>
+</tr>
+<tr class="even">
+<td>Muhammad Rozi Malim</td>
+<td>Universiti Teknologi MARA, Malaysia</td>
 </tr>
 <tr class="odd">
 <td>Monica Roman</td>
@@ -438,55 +677,52 @@ Discover Knew Knowledge Through Research
 <td>National Institute of Statistics and Ecological University of Bucharest, Romania</td>
 </tr>
 <tr class="odd">
-<td>Antoniade-Ciprian Alexandru</td>
-<td>Ecological University of Bucharest, Romania</td>
-</tr>
-<tr class="even">
-<td>Adrian Dusa</td>
-<td>University of Bucharest, Romania</td>
-</tr>
-<tr class="odd">
-<td>Elena Druica</td>
-<td>University of Bucharest, Romania</td>
-</tr>
-<tr class="even">
 <td>Nicolae-Marius Jula</td>
 <td>Nicolae Titulescu University, Bucharest, Romania</td>
 </tr>
-<tr class="odd">
-<td>Ana Maria Dobre</td>
-<td>National Institute of Statistics</td>
-</tr>
 <tr class="even">
-<td>Gerald Cheang</td>
-<td>University of South Australia, Australia</td>
-</tr>
-<tr class="odd">
-<td>Suhaidi Hassan</td>
-<td>InterNetWorks Research Laboratory, Universiti Utara Malaysia, Malaysia</td>
-</tr>
-<tr class="even">
-<td>Martin Everett</td>
-<td>University of Manchester, UK</td>
-</tr>
-<tr class="odd">
-<td>Nicolaas Jan Dirk Nagelkerke</td>
-<td>University of Amsterdam, Netherland</td>
-</tr>
-<tr class="even">
-<td>Ang Miin Huey</td>
-<td>Uiniversiti Sains Malaysia, Malaysia</td>
+<td>Nur Chamidah</td>
+<td>Airlangga University, Indonesia</td>
 </tr>
 <tr class="odd">
 <td>Poo Kuan Hoong</td>
-<td>Senior Manager Data Science, AC Nielsen</td>
+<td>Axiata Group Berhad, Malaysia</td>
 </tr>
 <tr class="even">
-<td>Nurhuda Ismail</td>
-<td>Universiti Teknologi MARA, Malaysia</td>
+<td>Rozaini Roslan</td>
+<td>Universiti Tun Hussein Onn, Malaysia</td>
+</tr>
+<tr class="odd">
+<td>Sharidan Shafie</td>
+<td>Universiti Teknologi Malaysia</td>
+</tr>
+<tr class="even">
+<td>Shirlee R. Ocampo</td>
+<td>De La Salle University, Filipina</td>
+</tr>
+<tr class="odd">
+<td>Suhaidi Hassan</td>
+<td>Universiti Utara Malaysia, Malaysia</td>
+</tr>
+<tr class="even">
+<td>Tudorel Andrei</td>
+<td>National Institute of Statistics Bucharest and University of Economic Studies, Bucharest, Romania</td>
+</tr>
+<tr class="odd">
+<td>Valentina Vasile</td>
+<td>Romanian Academy, Institute of National Economy, Bucharest, Romania</td>
+</tr>
+<tr class="even">
+<td>Zakiah Ibrahim Kalantan</td>
+<td>King Abdulaziz University, Saudi Arabia</td>
+</tr>
+<tr class="odd">
+<td>Zurni Omar</td>
+<td>Universiti Utara Malaysia, Malaysia</td>
 </tr>
 </tbody>
 </table>
+<hr />
 </div>
 <div id="organizing-committee-universiti-teknologi-mara-kedah" class="section level3">
 <h3>Organizing Committee (Universiti Teknologi MARA Kedah)</h3>
@@ -504,6 +740,7 @@ Shahida Farhan Zakaria<br />
 Siti Fairus Mokhtar<br />
 Wan Siti Esah Che Hussain</p>
 <p><br/></p>
+<hr />
 </div>
 </div>
 <div id="contact-us" class="section level2">
@@ -523,6 +760,7 @@ Universiti Teknologi MARA Kedah<br />
 Sungai Petani Campus<br />
 08400 Merbok<br />
 Kedah Darul Aman, MALAYSIA <br/></p>
+<hr />
 </div>
 <div id="disclaimer" class="section level2">
 <h2>Disclaimer</h2>

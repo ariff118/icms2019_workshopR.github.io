@@ -12,48 +12,57 @@ output:
 
 <center>
   
-Date:  
+**Date:**  
 23 - 24 April 2019
 
-Venue:  
+**Venue:**  
 Ombak Villa Resort, Langkawi Island, Malaysia
 
-Theme:  
+**Theme:**  
 Discover Knew Knowledge Through Research  
 </center>  
 
 <br/>  
 
+*For more information on the conference, please follow this [link](https://uitmicms.wixsite.com/icms2019) or you can download the [conference brochure](files/icms2019.pdf)*
 
-
+---
 
 ## **R Workshop**   
-**"Visualization of your tidy data"**  
+    
+**"Visualization of your tidy data"** [Download Brochure](files/workshop.pdf)  
 **21 - 22 April 2019**  
 **Ombak Villa Resort, Langkawi**  
   
 In conjunction with the two conferences, the organising committee is conducting three parallel pre-conference workshops. For registration and further information please refer to the respective link given below.  
 
+---
 
-
-### **SPEAKER**  
+### **Speaker**  
 
 | Matthias Templ, PhD |                                                                  |  
 |:--------------------|:-----------------------------------------------------------------|  
 |<img src="images/matthias.png" style="width:90%; margin-right: 18px" align="center">| Dr Matthias Templ is the owner of data analysis company OG. He obtained his PhD in Technical Mathematics from Vienna University of Technology and was an associate professor at the same university. Currently Dr Temple lectures at the Institute of Data Analysis and Process Design, Zurich University of Applied Sciences, Switzerland. He also holds a position as a consultant to the Palacký University Olomouc, Czech Republic. Dr Templ is a researcher at the Quality and Methods Unit at Statistics Austria. His other consultation works include for the World Bank and the OECD. His main research interest is in the area of imputation, statistical disclosure control, visualization, compositional data analysis, computational statistics, teaching in statistics and cluster analysis. He participated in many European research projects, to name one of those: the AMELI project for adequate estimation of poverty and social exclusion. Dr Templ has more than 280 scientific contributions in books, scientific journals and conferences as well as more than 40 papers in well-known indexed scientific journals.  He is the author and maintainer of several R packages for official statistics, such as the `sdcMicro` package for statistical disclosure control, the `VIM` package for visualization and imputation of missing values, the `simPop` package for synthetic population simulation, and the `robCompositions` package for robust analysis of compositional data. He is also a co-author to many other packages.  In addition, Dr. Matthias Templ is the editor-in-chief of the Austrian Journal of Statistics; associate editor for Springer’s Journal Wirtschafts-und Sozialstatistische Archiv; editor for the journal The Register; and on the editorial board of three other journals – JWARP journal, The Journal Transactions on Data Privacy, and the Journal Frontiers in Biomedical Physics |  
   
-
-### **WHAT IS R?**  
+    
+### **What is R?**  
 open source; powerful and comprehensive platform for visualizing data, understanding and evaluating statistical models; programming language and software environment for statistical computing and graphics; ready to use for applications in data science, data analytics and for big data sets; participants expected to be able to use efficient R code and use R packages to perform data analytics after the workshop  
-
-### **WHO SHOULD ATTEND?**  
-Lecturers, Researchers, Engineers, Students, Industry Professionals and Scientists of any discipline who wish to explore R and Big Data.  
   
-### **COURSE OUTLINE**  
+  
+### **Who Should Attend?**  
+* Lecturers,  
+* Researchers,  
+* Engineers,  
+* Students,  
+* Industry Professionals, and    
+* Scientists  
+of any discipline who wish to explore R and Big Data.  
+  
+  
+### **Course Outline**  
 We assume basic knowledge in R syntax, for example by doing the exercises of R package Swirl or a free course, e.g. on data camp in advance to this course. All topics are accompanied by practical exercises to be done by course participants themselves on their laptops.  
   
-  
-First day:  
+**First day (21st April, 2019):**  
 
 - RStudio  
 
@@ -64,8 +73,7 @@ First day:
 - The graphics package in R  
 
   
-  
-Second day:  
+**Second day (22nd April, 2019):**    
 
 - Advanced data visualization with ggplot2  
 
@@ -77,41 +85,98 @@ Second day:
 
 - Web applications with R shiny and markdown  
 
-
+---
   
-
-## Committee  
+### Registration  
+Registration for pre-conference workshop is noe **OPEN**.  
+All interested participant can register through confBay by clicking the following   [![confBay](images/logo-confbay.png)](https://submit.confbay.com/conf/icms2019).  
+Participants are advice to create a confBay account first if you don't have one yet before you are allowed to log in and register.  
   
+  
+### Workshop Fee  
+| Early Bird (Before 15 February 2019) | Regular Price |  
+|:-----------|:--------------|  
+| **Local Participant** | **Local Participant** |  
+| *Individual* - MYR 980 | *Individual* - MYR 1500 |  
+| *Group of 2* - MYR 890 (each) | *Group of 2* - MYR 1200 (each) |  
+| *Student* - MYR 800   | *Student* - MYR 1000  |  
+|              |              |  
+| **International Participant**| **International Participant** |  
+| *Individual* - USD 250 | *Individual* - USD 380 |  
+| *Group of 2* - USD 230 (each) | *Group of 2* - USD 320 (each) |  
+| *Student* - USD 210   | *Student* - USD 300  |  
+  
+   
+### Mode of Payment  
+  
+**For Local Presenter / Participant / Student**
+Academic Institutional cheques/ Banker’s cheques/Inter Bank Giro (IBG)/Bank Transfer/Government Local Order (LO) (Personal cheques are not accepted). All cheques must be made payable to **“Bendahari UiTM Kedah”**.  
+  
+**For International  Presenter / Participant / Student**  
+Telegraphic Transfers/Electronic Transfers ONLY (including bank charges).  
+  
+| Item    | Details                         |  
+|:--------|:--------------------------------|  
+| Bank Name |: Bank Islam Malaysia Bhd (Sungai Petani Branch) |  
+| Bank Address |: No.71&72 Lorong Lagenda 1, Lagenda Heights, 08000 Sungai Petani, Kedah, MALAYSIA |  
+| Bank Account Number |: 02020010021120 |    
+| Bank Account Name |: UiTM Cawangan Kedah |  
+| Pay to |: Bendahari UiTM Kedah |  
+| Swift Code |: BIMBMYKL |  
+  
+**Proof Of Payments**  
+Please send the bank transaction slip or receipt as proof of payment by uploading to  
+  
+<center>  
+[![confBay](images/logo-confbay.png)](https://submit.confbay.com/conf/icms2019).  
+</center>  
+
+*Please bring along your proof of payment on the registration day.  
+  
+**Cancellation and Refund Policy**  
+Payments made are non-refundable.  
+
+---  
+
+## iCMS2019 Committee  
+  
+---  
+
 ### International Scientific Committee  
   
 SC Members|Institution
 --|-------
-Tudorel Andrei|National Institute of Statistics and Bucharest, University of Economic Studies, Bucharest, Romania  
-Matthias Templ|Statistics Austria and Institute of Data Analysis and Process Design, Zurich University of Applied Sciences, Zurich Switzerland  
-Ralf Munnich|University of Trier, Germany  
-Risto Lehtonen|University of Helsinki, Finland  
-Gergely Daroczi|Easystats Ltd, Budapest, Hungary  
-Lucian Liviu Albu|Romanian Academy, Institute for Economic Forecasting, Bucharest, Romania  
-Gheorghe Zaman|Romanian Academy, Institute of National Economy, Bucharest, Romania  
-Valentina Vasile|Romanian Academy, Institute of National Economy, Bucharest, Romania  
+Adrian Dusa|University of Bucharest, Romania  
+Ana Maria Dobre|National Institute of Statistics  
+Antoniade-Ciprian Alexandru|Ecological University of Bucharest, Romania  
+Arindam Bose|Tata Institute of Social Sciences (TISS), Mumbai, India  
+Bogdan Oancea|The University of Bucharest and National Institute of Statistics, Bucharest, Romania  
 Dorin Jula|Romanian Academy, Institute for Economic Forecasting and Ecological University of Bucharest, Romania  
-Bogdan Oancea|University of Bucharest and National Institute of Statistics, Bucharest, Romania  
+Elena Druica|University of Bucharest, Romania  
+Gerald Cheang|University of South Australia, Australia  
+Gheorghe Zaman|Romanian Academy, Institute of National Economy, Bucharest, Romania  
+Hala Aly Fergany|Tanta University, Egypt  
+Lucian Liviu Albu|Romanian Academy, Institute for Economic Forecasting, Bucharest, Romania  
+Matthias Templ|Statistics Austria & Zurich University of Applied Sciences, Switzerland  
+Martin Everett|University of Manchester, UK  
+Muhammad Rozi Malim|Universiti Teknologi MARA, Malaysia  
 Monica Roman|Bucharest University of Economic Studies, Romania  
 Nicoleta Caragea|National Institute of Statistics and Ecological University of Bucharest, Romania  
-Antoniade-Ciprian Alexandru|Ecological University of Bucharest, Romania  
-Adrian Dusa|University of Bucharest, Romania  
-Elena Druica|University of Bucharest, Romania  
 Nicolae-Marius Jula|Nicolae Titulescu University, Bucharest, Romania  
-Ana Maria Dobre|National Institute of Statistics  
-Gerald Cheang|University of South Australia, Australia  
-Suhaidi Hassan|InterNetWorks Research Laboratory, Universiti Utara Malaysia, Malaysia  
-Martin Everett|University of Manchester, UK  
-Nicolaas Jan Dirk Nagelkerke|University of Amsterdam, Netherland  
-Ang Miin Huey|Uiniversiti Sains Malaysia, Malaysia  
-Poo Kuan Hoong|Senior Manager Data Science, AC Nielsen  
-Nurhuda Ismail|Universiti Teknologi MARA, Malaysia  
+Nur Chamidah|Airlangga University, Indonesia  
+Poo Kuan Hoong|Axiata Group Berhad, Malaysia  
+Rozaini Roslan|Universiti Tun Hussein Onn, Malaysia  
+Sharidan Shafie|Universiti Teknologi Malaysia  
+Shirlee R. Ocampo|De La Salle University, Filipina  
+Suhaidi Hassan|Universiti Utara Malaysia, Malaysia  
+Tudorel Andrei|National Institute of Statistics Bucharest and University of Economic Studies, Bucharest, Romania  
+Valentina Vasile|Romanian Academy, Institute of National Economy, Bucharest, Romania  
+Zakiah Ibrahim Kalantan|King Abdulaziz University, Saudi Arabia  
+Zurni Omar|Universiti Utara Malaysia, Malaysia  
   
   
+---  
+
 ### Organizing Committee (Universiti Teknologi MARA Kedah)  
   
 Abd Razak Ahmad  
@@ -130,7 +195,9 @@ Siti Fairus Mokhtar
 Wan Siti Esah Che Hussain  
 
 <br/>
-  
+
+---  
+
 ## Contact Us  
 
 For further enquiries,  
@@ -152,6 +219,8 @@ For further enquiries,
       08400 Merbok  
       Kedah Darul Aman, MALAYSIA
 <br/>  
+
+---  
 
 ## Disclaimer  
 
