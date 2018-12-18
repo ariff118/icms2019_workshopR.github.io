@@ -60,7 +60,7 @@ of any discipline who wish to explore R and Big Data.
   
   
 ### **Course Outline**  
-We assume basic knowledge in R syntax, for example by doing the exercises of R package Swirl or a free course, e.g. on data camp in advance to this course. All topics are accompanied by practical exercises to be done by course participants themselves on their laptops.  
+We assume basic knowledge in R syntax, for example by doing the exercises of R package Swirl or a free course, e.g. on Data Camp in advance to this course. All topics are accompanied by practical exercises to be done by course participants themselves on their laptops.  
   
 **First day (21st April, 2019):**  
 
