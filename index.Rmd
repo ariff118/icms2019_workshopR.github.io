@@ -19,12 +19,12 @@ output:
 Ombak Villa Resort, Langkawi Island, Malaysia
 
 **Theme:**  
-Discover Knew Knowledge Through Research  
+Discover New Knowledge Through Research  
 </center>  
 
 <br/>  
 
-*For more information on the conference, please follow this [link](https://uitmicms.wixsite.com/icms2019) or you can download the [conference brochure](files/icms2019.pdf)*
+*For more information on the conference, please follow this [link](https://uitmicms.wixsite.com/icms2019) or download the [conference brochure](files/icms2019.pdf)*
 
 ---
 
@@ -34,7 +34,7 @@ Discover Knew Knowledge Through Research
 **21 - 22 April 2019**  
 **Ombak Villa Resort, Langkawi**  
   
-In conjunction with the two conferences, the organising committee is conducting a pre-conference workshops on "Visualization of  your tidy data" and also a two-hour complimentary sharing session on "Machine Learning using R". For registration and further information please refer to the respective link given below.  
+In conjunction with the conferences, the organising committee is conducting a pre-conference workshops on "Visualization of tidy data" and also a two-hour complimentary sharing session on "Machine Learning using R". For registration and further information please refer to the respective link given below.  
 
 ---
 
@@ -88,9 +88,9 @@ We assume basic knowledge in R syntax, for example by doing the exercises of R p
 ---
   
 ### Registration  
-Registration for pre-conference workshop is noe **OPEN**.  
+Registration for pre-conference workshop is now **OPEN**.  
 All interested participant can register through confBay by clicking the following   [![confBay](images/logo-confbay.png)](https://submit.confbay.com/conf/icms2019).  
-Participants are advice to create a confBay account first if you don't have one yet before you are allowed to log in and register.  
+Participants are advise to create a confBay account first if you don't have one yet before you are allowed to log in and register.  
   
   
 ### Workshop Fee  
@@ -189,6 +189,8 @@ Kartini Kassim
 Mohd Rijal Illias  
 Kor Liew Kee  
 Noor Hafizah Zainal Aznam  
+Norashikin Nasaruddin  
+Nurazlina Abdul Rashid  
 Rosidah Ahmad  
 Shahida Farhan Zakaria  
 Siti Fairus Mokhtar   	
