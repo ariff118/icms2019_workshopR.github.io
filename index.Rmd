@@ -16,7 +16,7 @@ output:
 23 - 24 April 2019
 
 **Venue:**  
-Ombak Villa Resort, Langkawi Island, Malaysia
+Ombak Villa, Langkawi Island, Malaysia
 
 **Theme:**  
 Discover New Knowledge Through Research  
@@ -30,11 +30,11 @@ Discover New Knowledge Through Research
 
 ## **R Workshop**   
     
-**"Visualization of your tidy data"** [Download Brochure](files/workshop.pdf)  
+**"Visualization of tidy data"** [Download Brochure](files/workshop.pdf)  
 **21 - 22 April 2019**  
-**Ombak Villa Resort, Langkawi**  
+**Ombak Villa, Langkawi Island, Malaysia**  
   
-In conjunction with the conferences, the organising committee is conducting a pre-conference workshops on "Visualization of tidy data" and also a two-hour complimentary sharing session on "Machine Learning using R". For registration and further information please refer to the respective link given below.  
+In conjunction with the conferences, the organising committee is conducting a pre-conference workshop in R. For registration and further information please refer to the respective link given in the registration section below.  
 
 ---
 
@@ -46,7 +46,12 @@ In conjunction with the conferences, the organising committee is conducting a pr
   
     
 ### **What is R?**  
-open source; powerful and comprehensive platform for visualizing data, understanding and evaluating statistical models; programming language and software environment for statistical computing and graphics; ready to use for applications in data science, data analytics and for big data sets; participants expected to be able to use efficient R code and use R packages to perform data analytics after the workshop  
+* open source;  
+* powerful and comprehensive platform for visualizing data, understanding and evaluating statistical models;  
+* programming language and software environment for statistical computing and graphics;  
+* ready to use for applications in data science, data analytics and for big data sets;  
+  
+*Participants expected to be able to use efficient R code and use R packages to perform data analytics after the workshop.*  
   
   
 ### **Who Should Attend?**  
@@ -89,12 +94,15 @@ We assume basic knowledge in R syntax, for example by doing the exercises of R p
   
 ### Registration  
 Registration for pre-conference workshop is now **OPEN**.  
-All interested participant can register through confBay by clicking the following   [![confBay](images/logo-confbay.png)](https://submit.confbay.com/conf/icms2019).  
+All interested participant can register through confBay by clicking the following  
+<center>  
+[![confBay](images/logo-confbay.png)](https://submit.confbay.com/conf/icms2019ws).  
+</center>  
 Participants are advise to create a confBay account first if you don't have one yet before you are allowed to log in and register.  
   
   
 ### Workshop Fee  
-| Early Bird (Before 15 February 2019) | Regular Price |  
+| Early Bird (Before 15 February 2019) | Regular Price (Before 31 March 2019) |  
 |:-----------|:--------------|  
 | **Local Participant** | **Local Participant** |  
 | *Individual* - MYR 980 | *Individual* - MYR 1500 |  
@@ -109,7 +117,7 @@ Participants are advise to create a confBay account first if you don't have one 
    
 ### Mode of Payment  
   
-**For Local Presenter / Participant / Student**
+**For Local Presenter / Participant / Student**  
 Academic Institutional cheques/ Banker’s cheques/Inter Bank Giro (IBG)/Bank Transfer/Government Local Order (LO) (Personal cheques are not accepted). All cheques must be made payable to **“Bendahari UiTM Kedah”**.  
   
 **For International  Presenter / Participant / Student**  
@@ -128,7 +136,7 @@ Telegraphic Transfers/Electronic Transfers ONLY (including bank charges).
 Please send the bank transaction slip or receipt as proof of payment by uploading to  
   
 <center>  
-[![confBay](images/logo-confbay.png)](https://submit.confbay.com/conf/icms2019).  
+[![confBay](images/logo-confbay.png)](https://submit.confbay.com/conf/icms2019ws).  
 </center>  
 
 *Please bring along your proof of payment on the registration day.  
@@ -182,18 +190,19 @@ Zurni Omar|Universiti Utara Malaysia, Malaysia
 Abd Razak Ahmad  
 Amirah Hazwani Abd Rahim  
 Anis Mardiana Ahmad  
-Asmahani Nayan 
-Fazillah Bosli  
+Asmahani Nayan  
+Fazillah Bosli   
 Kamarul Ariffin Mansor  
 Kartini Kassim  
-Mohd Rijal Illias  
 Kor Liew Kee  
+Mohd Rijal Illias  
 Noor Hafizah Zainal Aznam  
 Norashikin Nasaruddin  
-Nurazlina Abdul Rashid  
+Nur Azlina Abdul Rashid  
 Rosidah Ahmad  
 Shahida Farhan Zakaria  
-Siti Fairus Mokhtar   	
+Siti Fairus Mokhtar   
+Wan Hasni Sabariah Wan Hassan  
 Wan Siti Esah Che Hussain  
 
 <br/>
