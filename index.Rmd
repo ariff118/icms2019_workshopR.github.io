@@ -12,7 +12,7 @@ output:
 
 <center>
   
-**Date:**  
+**Conference Date:**  
 23 - 24 April 2019
 
 **Venue:**  
@@ -28,13 +28,13 @@ Discover New Knowledge Through Research
 
 ---
 
-## **R Workshop**   
+## **Pre-Conference R Workshop**   
     
-**"Visualization of tidy data"** [Download Brochure](files/workshop.pdf)  
+**"Visualization of Tidy Data"** [Download Brochure](files/workshop.pdf)  
 **21 - 22 April 2019**  
 **Ombak Villa, Langkawi Island, Malaysia**  
   
-In conjunction with the conference, the organising committee is conducting a pre-conference workshop in R. For registration and further information please refer to the respective link given in the registration section below.  
+In conjunction with the conferences, the organising committee is conducting a pre-conference workshop in R. For registration and further information please refer to the respective link given in the registration section below.  
 
 ---
 
@@ -51,7 +51,7 @@ In conjunction with the conference, the organising committee is conducting a pre
 * programming language and software environment for statistical computing and graphics;  
 * ready to use for applications in data science, data analytics and for big data sets;  
   
-*Participants expected to be able to use efficient R code and use R packages to perform data analytics after the workshop.*  
+*Participants are expected to be able to use efficient R code and use R packages to perform data analytics after the workshop.*  
   
   
 ### **Who Should Attend?**  
@@ -65,7 +65,7 @@ of any discipline who wish to explore R and Big Data.
   
   
 ### **Course Outline**  
-We assume basic knowledge in R syntax, for example by doing the exercises of R package Swirl or a free course, e.g. on Data Camp in advance to this course. All topics are accompanied by practical exercises to be done by course participants themselves on their laptops.  
+We assume basic knowledge in R syntax which can be achieved, for example by doing the exercises of R package Swirl or taking a free course, e.g. on Data Camp in advance to this course. All topics are accompanied by practical exercises to be done by course participants themselves on their laptops.  
   
 **First day (21st April, 2019):**  
 
@@ -94,11 +94,11 @@ We assume basic knowledge in R syntax, for example by doing the exercises of R p
   
 ### Registration  
 Registration for pre-conference workshop is now **OPEN**.  
-All interested participant can register through confBay by clicking the following logo  
+All interested participant can register through confBay by clicking the following  
 <center>  
 [![confBay](images/logo-confbay.png)](https://submit.confbay.com/conf/icms2019ws).  
 </center>  
-Participants are advised to create a confBay account first if you don't have one yet before you are allowed to log in and register.  
+Participants are advise to create a confBay account first if you don't have one yet before you are allowed to log in and register.  
   
   
 ### Workshop Fee  
@@ -220,7 +220,7 @@ For further enquiries,
       +604-456 2506 (Kor Liew Kee) (Publication)  
       +604-456 2406 (Asmahani Nayan) (General Inquiry)  
       +604-456 2445 (Noor Hafizah Zainal Aznam) (Payment)  
-      +604-456 2408 (Kamarul Ariffin Mansor) (Workshop)  
+      +604-456 2408 (Kamarul Ariffin Mansor) (Workshop) *or WhatsApp at +60124336901*  
   
 **Address:**  
       Secretariat iCMS2019  
