@@ -69,26 +69,33 @@ We assume basic knowledge in R syntax which can be achieved, for example by doin
   
 **First day (21st April, 2019):**  
 
-- RStudio  
-
-- Data Analysis with R, some basics and warm up  
-
-- Tidy data and data manipulation with dplyr  
-
-- The graphics package in R  
+| Time | Topics |  
+|:----:|:-------|  
+| 08.30 - 0900 | Registration |  
+| 09.00 - 10.30 | R Studio |  
+| | Data Analysis with R, some basics and warm up |  
+| 10.30 - 11.00 | Coffee Break |  
+| 11.00 - 13.00 | Tidy data and data manipulation with dplyr |  
+| 13.00 - 14.30 | Lunch |  
+| 14.30 - 16.30 | The graphics package in R |  
+| 16.30 - 17.00 | Tea break & End of Session |  
 
   
 **Second day (22nd April, 2019):**    
 
-- Advanced data visualization with ggplot2  
+| Time | Topics |  
+|:----:|:-------|  
+| 08.30 - 0900 | Registration |  
+| 09.00 - 10.30 | Advanced data visualization with ggplot2 |  
+| | Mapping, Maps with ggmap and leaflet |  
+| 10.30 - 11.00 | Coffee Break |  
+| 11.00 - 13.00 | Special graphics for special problems |  
+| 13.00 - 14.30 | Lunch |  
+| 14.30 - 16.30 | Overview on interactive visualisation tools |  
+| |  Web applications with R shiny and markdown |  
+| 16.30 - 17.00 | Tea break & End of Session |  
 
-- Mapping, Maps with ggmap and leaflet  
-
-- Special graphics for special problems  
-
-- Overview on interactive visualisation tools  
-
-- Web applications with R shiny and markdown  
+*Note: Tentative Schedule Time is subject to changes*
 
 ---
   
